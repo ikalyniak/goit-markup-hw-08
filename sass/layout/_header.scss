@@ -1,0 +1,130 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header {
+  .container {
+    display: flex;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
+  }
+}
+
+.logo-header {
+  color: var(--color-logo-header);
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--color-main);
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+
+  &::before {
+    content: "";
+    @include position($bottom: 0, $height: 4px);
+
+    background-color: var(--color-accent);
+    border-radius: 2px;
+
+    transform-origin: left;
+    transform: scaleX(0);
+
+    transition: transform 250ms var(--timing-function);
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scaleX(1);
+  }
+
+  &--current {
+    color: var(--color-accent);
+
+    &::before {
+      content: "";
+      @include position($bottom: 0, $height: 4px);
+
+      background-color: var(--color-accent);
+      border-radius: 2px;
+
+      transform: scaleX(1);
+    }
+  }
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contacts-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts-list__link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--color-second);
+
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}
+
+.contacts-list__icon {
+  margin-right: 10px;
+  fill: var(--color-second);
+
+  transition: fill 250ms var(--timing-function);
+
+  .contacts-list__link:hover &,
+  .contacts-list__link:focus & {
+    fill: var(--color-accent);
+  }
+}

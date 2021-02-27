@@ -1,0 +1,11 @@
+.social-link {
+  @include flex();
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
