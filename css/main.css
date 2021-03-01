@@ -1345,7 +1345,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
