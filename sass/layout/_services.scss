@@ -1,8 +1,13 @@
 .services {
-  padding-bottom: 94px;
+  display: none;
 
-  .section-title {
-    margin-bottom: 50px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-bottom: 94px;
+
+    .section-title {
+      margin-bottom: 50px;
+    }
   }
 }
 

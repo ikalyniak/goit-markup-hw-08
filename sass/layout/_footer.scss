@@ -7,14 +7,33 @@
 
 .footer {
   .container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
   }
 }
 
 .contacts-container {
-  width: 231px;
-  margin-right: 70px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    margin-right: 70px;
+  }
 }
 
 .footer {
@@ -25,6 +44,14 @@
 
 .logo-footer {
   color: var(--color-logo-footer);
+}
+
+.address__list {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .address__item {
@@ -55,7 +82,19 @@
 }
 
 .social-container {
-  width: 206px;
+  @media screen and(max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 206px;
+  }
 }
 
 .social-container__title {
@@ -72,6 +111,7 @@
 .social-container__list {
   display: flex;
   justify-content: space-between;
+  width: 206px;
 }
 
 .social-container__item {
@@ -95,7 +135,15 @@
 }
 
 .form-container {
-  margin-left: auto;
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .form-container__title {
@@ -107,16 +155,24 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-logo-footer);
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-form {
   display: flex;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-form__input {
-  margin-right: 12px;
   padding-left: 12px;
-  width: 358px;
+  width: 100%;
   height: 50px;
 
   font-weight: 400;
@@ -137,6 +193,18 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: var(--color-footer-link);
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
   }
 }
 
