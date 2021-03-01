@@ -282,7 +282,7 @@ body {
   height: 40px;
   padding: 0;
   cursor: pointer;
-  border: none;
+  border: 0;
   background-color: transparent;
 }
 
