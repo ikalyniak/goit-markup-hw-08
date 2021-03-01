@@ -9,8 +9,15 @@
 }
 
 .modal {
-  @include position(50%, 50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 450px;
+  height: 99%;
+  max-height: 609px;
   padding: 40px;
+  overflow: scroll;
 
   background-color: var(--color-logo-footer);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -21,14 +28,10 @@
 
   transition: transform 500ms var(--timing-function);
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    height: 609px;
-  }
-
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
+    // overflow: hidden;
   }
 }
 
