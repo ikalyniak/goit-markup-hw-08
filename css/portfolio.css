@@ -384,6 +384,16 @@ body {
   -webkit-transform: scale(0);
           transform: scale(0);
   overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: var(--color-logo-footer);
   -webkit-transition: -webkit-transform 500ms var(--timing-function);
   transition: -webkit-transform 500ms var(--timing-function);
@@ -432,10 +442,6 @@ body {
 .mobile-menu__icon-close {
   width: 18px;
   height: 18px;
-}
-
-.mobile-nav {
-  margin-bottom: 63vw;
 }
 
 .mobile-nav__item:not(:last-child) {

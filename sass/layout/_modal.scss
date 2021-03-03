@@ -206,6 +206,7 @@
 .modal-form__label-policy {
   @include flex();
   margin-bottom: 10px;
+  padding-left: 20px;
 
   &::before {
     display: block;

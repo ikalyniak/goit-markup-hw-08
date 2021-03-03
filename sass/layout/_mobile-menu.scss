@@ -28,6 +28,9 @@
   padding: 10vw 8vw;
   transform: scale(0);
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   background-color: var(--color-logo-footer);
 
@@ -59,9 +62,10 @@
   width: 18px;
   height: 18px;
 }
-.mobile-nav {
-  margin-bottom: 63vw;
-}
+
+// .mobile-nav {
+//   margin-bottom: 63vw;
+// }
 
 .mobile-nav__item {
   &:not(:last-child) {

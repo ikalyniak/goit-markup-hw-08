@@ -22,14 +22,15 @@
       url("../images/studio/hero/optimized-1x2x/hero-mobile@2x.jpg");
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 768px;
 
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/studio/hero/optimized-1x2x/hero-tablet.jpg");
+    background-size: cover;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -46,7 +47,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
     min-width: 1200px;
-    // width: 1600px;
+    max-width: 1600px;
 
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
