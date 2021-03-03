@@ -450,6 +450,10 @@ body {
   height: 18px;
 }
 
+.mobile-nav {
+  margin-bottom: 63vw;
+}
+
 .mobile-nav__item:not(:last-child) {
   margin-bottom: 7vw;
 }
