@@ -35,6 +35,10 @@
   background-color: var(--color-logo-footer);
 
   transition: transform 500ms var(--timing-function);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-menu.is-open {
